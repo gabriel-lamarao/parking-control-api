@@ -6,12 +6,14 @@ import javax.validation.constraints.Size;
 public class ParkingSpotDto {
 
     @NotBlank
-    private String parkingSpotNunber;
+    private String parkingSpotNumber;
     @NotBlank
     @Size(max = 7)
-    private String licencePlateCar;
+    private String licensePlateCar;
     @NotBlank
     private String brandCar;
+    @NotBlank
+    private String modelCar;
     @NotBlank
     private String colorCar;
     @NotBlank
@@ -21,20 +23,20 @@ public class ParkingSpotDto {
     @NotBlank
     private String block;
 
-    public String getParkingSpotNunber() {
-        return parkingSpotNunber;
+    public String getParkingSpotNumber() {
+        return parkingSpotNumber;
     }
 
-    public void setParkingSpotNunber(String parkingSpotNunber) {
-        this.parkingSpotNunber = parkingSpotNunber;
+    public void setParkingSpotNumber(String parkingSpotNumber) {
+        this.parkingSpotNumber = parkingSpotNumber;
     }
 
-    public String getLicencePlateCar() {
-        return licencePlateCar;
+    public String getLicensePlateCar() {
+        return licensePlateCar;
     }
 
-    public void setLicencePlateCar(String licencePlateCar) {
-        this.licencePlateCar = licencePlateCar;
+    public void setLicensePlateCar(String licensePlateCar) {
+        this.licensePlateCar = licensePlateCar;
     }
 
     public String getBrandCar() {
@@ -43,6 +45,14 @@ public class ParkingSpotDto {
 
     public void setBrandCar(String brandCar) {
         this.brandCar = brandCar;
+    }
+
+    public String getModelCar() {
+        return modelCar;
+    }
+
+    public void setModelCar(String modelCar) {
+        this.modelCar = modelCar;
     }
 
     public String getColorCar() {
